@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="HistoricalEntity" representedClassName="HistoricalEntity" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="smallcase" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SmallcaseEntity" inverseName="historicalData" inverseEntity="SmallcaseEntity" syncable="YES"/>
+    </entity>
+    <entity name="SmallcaseEntity" representedClassName="SmallcaseEntity" syncable="YES">
+        <attribute name="dailyReturn" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="indexValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="monthlyReturn" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rationale" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yearlyReturn" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="historicalData" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HistoricalEntity" inverseName="smallcase" inverseEntity="HistoricalEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HistoricalEntity" positionX="224.65625" positionY="-17.8125" width="128" height="105"/>
+        <element name="SmallcaseEntity" positionX="-63" positionY="-18" width="128" height="180"/>
+    </elements>
 </model>

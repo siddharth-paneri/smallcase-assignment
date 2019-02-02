@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (4.8.1)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
+  - ReachabilitySwift (4.3.0)
+  - SwiftRecord (0.0.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - Charts
+  - ReachabilitySwift
+  - SwiftRecord
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - Charts
+    - ReachabilitySwift
+    - SwiftRecord
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  SwiftRecord: 0e323b089f2c84639f7e12aa2c827d85fa871af0
+
+PODFILE CHECKSUM: 152827abf4a6e3d4eefcec4e33a5f63c3e81e0f5
+
+COCOAPODS: 1.5.3
